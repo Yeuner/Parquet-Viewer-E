@@ -4,6 +4,27 @@ import duckdb
 import pyarrow.parquet as pq
 import io
 
+
+st.set_page_config(
+    page_title="Parquet Viwer APP",
+    page_icon= 'https://cdn.icon-icons.com/icons2/836/PNG/512/Amazon_icon-icons.com_66787.png',
+    layout="centered",
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://www.amazon.com',
+        'Report a bug': "https://www.amazon.com",
+        'About': """
+            ## Parquet Viewer Tool
+            Version 1.0.0  
+            Developed by: amazon.com  
+            
+            This application allows you to upload and analyze Parquet files, convert lists to SQL format, and perform custom SQL queries.  
+            
+            © 2024 Amazon.com. All rights reserved.
+        """
+    }
+)
+
 # Configuración de la interfaz de usuario
 st.title("Herramienta de Visualización y Consulta de Archivos Parquet")
 
